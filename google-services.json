@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1094422565255",
+    "project_id": "simply-93589"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094422565255:android:a9fedf96a827f539",
+        "android_client_info": {
+          "package_name": "com.bajaj.agam.simply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094422565255-3ksuidpb442sr6sgslqbqpov3rvn21f8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bajaj.agam.simply",
+            "certificate_hash": "87E104C339344A3CEFFBA9DDAABFB2FF1B05278A"
+          }
+        },
+        {
+          "client_id": "1094422565255-s3umrldcaaq13fk1mcfmm957cl66je08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBovhiNOTec-bFB93FQ7FRtfc17MaZ_u-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

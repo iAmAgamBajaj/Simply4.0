@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:text="First Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText android:id="@+id/fname_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:inputType="textMultiLine" android:layout_marginBottom="10dp">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:text="Last Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText android:id="@+id/lname_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:inputType="textMultiLine" android:layout_marginBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/email_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:inputType="textEmailAddress" android:layout_marginBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:text="Phone no."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText android:id="@+id/phone_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:inputType="phone" android:layout_marginBottom="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:text="Room no."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText android:id="@+id/room_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:inputType="phone" android:layout_marginBottom="10dp">
+        </EditText>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/radioG_form"
+            android:layout_marginLeft="20dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Boys Hostel"
+                android:id="@+id/bh_form" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Girls Hostel"
+                android:layout_marginLeft="110dp"
+                android:id="@+id/gh_form"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/db_button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="EnterApp" />
+
+    </LinearLayout>
+
+</ScrollView>

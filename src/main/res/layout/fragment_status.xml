@@ -1,0 +1,72 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bajaj.agam.simply.DefaultFragment">
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+ <ImageView
+     android:layout_marginTop="20dp"
+     android:id="@+id/equipment"
+     android:layout_width="441dp"
+     android:layout_height="239dp"
+     android:layout_gravity="center_horizontal"
+     android:layout_weight="0.21" />
+
+
+ <EditText
+     android:enabled="false"
+     android:gravity="center"
+     android:hint="{#id}-[Complaint Status]"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/testField"
+     android:editable="false"
+     android:layout_gravity="center_horizontal"
+     android:layout_weight="0.21" />
+
+ <Button
+     style="?android:attr/buttonStyleSmall"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Register Complaint"
+     android:textColor="#ffffff"
+     android:id="@+id/complainButton"
+     android:layout_marginTop="35dp"
+     android:layout_below="@+id/qr"
+     android:layout_centerHorizontal="true"
+     android:background="@color/colorPrimary"
+     android:padding="10dp"
+     android:layout_gravity="center_horizontal"/>
+
+ <ProgressBar
+     style="?android:attr/progressBarStyleHorizontal"
+     android:layout_width="175dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="25dp"
+     android:id="@+id/progressBar"
+     android:layout_alignStart="@+id/qr"
+     android:max="3"
+     android:layout_alignEnd="@+id/qr"
+     android:layout_below="@+id/complainButton"
+     android:layout_weight="0.05"
+     android:layout_gravity="center_horizontal" />
+
+     <android.support.design.widget.FloatingActionButton
+         android:layout_marginTop="20sp"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center"
+         android:src="@drawable/refresh"
+         android:layout_height="wrap_content"
+         android:id="@+id/refresh" />
+
+
+
+
+ </LinearLayout>
+</ScrollView>

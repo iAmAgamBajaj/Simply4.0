@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bajaj.agam.simply.ContactFMS">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#93F7F7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMAIL ID: support-fms@iiitd.ac.in"/>
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PHONE NO.: +91 98688 78433"/>
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arun Verma: +91 99111 43723"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="1sp"
+                android:elevation="2sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:padding="10sp"
+                    android:layout_gravity="center"
+                    android:text="Emailto: support-fms@iiitd.ac.in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.FloatingActionButton
+                    android:background="@color/colorPrimary"
+                    android:layout_height="60sp"
+                    android:layout_width="60sp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_dialog_email"
+                    android:layout_margin="50dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="5sp"
+                    android:id="@+id/makeEmailFMS">
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="1sp"
+                android:elevation="2sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:padding="10sp"
+                    android:layout_gravity="center"
+                    android:text="Call: (+91)98688 78433"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_height="60sp"
+                    android:src="@drawable/phone"
+                    android:layout_width="60sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="102dp"
+                    android:elevation="5sp"
+                    android:focusable="false"
+                    android:id="@+id/makeCallFMS">
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bajaj.agam.simply.DefaultFragment"
+    android:focusable="false">
+
+    <!--<at.markushi.ui.CircleButton-->
+        <!--android:layout_width="64dip"-->
+        <!--android:layout_height="64dip"-->
+        <!--android:src="@drawable/scan2"-->
+        <!--android:background="#9ab34f"-->
+        <!--android::cb_pressedRingWidth="8dip" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:alpha="0.8"
+        android:id="@+id/qr"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:src="@drawable/scan2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="scanQR"
+        android:layout_gravity="center_horizontal"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="0.21"
+        app:elevation="50sp" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Complaint"
+        android:alpha="0.4"
+        android:textColor="#ffffff"
+        android:id="@+id/dummy"
+        android:enabled="false"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/qr"
+        android:layout_centerHorizontal="true"
+        android:background="@color/accent_material_light"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ComplainRaise"
+        android:elevation="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/statusView"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:layout_above="@+id/bottomBar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bajaj.agam.simply.DirectMessage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your complaint below"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="left|top"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:hint="Enter Title Here"
+        android:background="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/dm_title"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:hint="Enter Here"
+        android:padding="5dp"
+        android:background="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/dm_body"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@color/accent_material_light"
+        android:textColor="#ffffff"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/button_dm"
+        android:layout_gravity="right"
+        android:layout_alignEnd="@+id/dm_body"
+        android:layout_below="@+id/dm_body"
+        android:layout_toEndOf="@+id/textView2" />
+
+</LinearLayout>
+</ScrollView>

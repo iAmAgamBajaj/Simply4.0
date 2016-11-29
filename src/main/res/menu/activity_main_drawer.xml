@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/scan"
+            android:title="Scan" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_direct"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Direct Message" />
+
+        <item
+            android:id="@+id/nav_mycomp"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Repair History" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contactUs"
+                android:icon="@drawable/contact"
+                android:title="Contact FMS" />
+        </menu>
+    </item>
+
+</menu>
